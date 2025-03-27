@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - food_delivery_network
+    command: ["npm", "run", "start"]  # Ensure backend runs in dev mode
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - food_delivery_network
+    command: ["npm", "run", "dev"]
+
+  admin:
+    build: ./admin
+    ports:
+      - "5174:5174"
+    volumes:
+      - ./admin:/app
+      - /app/node_modules
+    networks:
+      - food_delivery_network
+    command: ["npm", "run", "dev"]
+
+  mongo:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - food_delivery_network
+
+networks:
+  food_delivery_network:
+    driver: bridge

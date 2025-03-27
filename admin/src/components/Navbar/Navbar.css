@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+.navbar .profile{
+    width: 40px;
+}
+.login-conditon{
+    font-size: 20px;
+}
+
+.profile {
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+  }
+  
+  .profile:hover {
+    transform: scale(1.1); /* Makes the image 10% bigger on hover */
+  }

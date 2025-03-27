@@ -1,0 +1,99 @@
+.app-download {
+    margin: auto;
+    margin-top: 100px;
+    font-size: max(3vw, 20px);
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: max(2vw, 10px);
+    margin-top: 40px;
+  }
+  
+  .app-download-platforms img {
+    width: max(30vw, 120px);
+    max-width: 180px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .app-download-platforms img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Testimonial Cards Styles */
+  .testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonial-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Gap between the cards */
+    margin-top: 30px;
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonial-card p {
+    font-size: 16px;
+    color: #4b5563;
+  }
+  
+  .testimonial-card .user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .testimonial-card .user-info img {
+    border-radius: 5%;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .testimonial-card .user-info div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial-card .user-info p {
+    margin: 0;
+  }
+  
+  .testimonial-card .user-info p.font-semibold {
+    font-weight: bold;
+  }
+  
+  .testimonial-card .user-info p.text-gray-500 {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Make the grid responsive */
+  @media (max-width: 1024px) {
+    .testimonial-cards-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .testimonial-cards-container {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+  

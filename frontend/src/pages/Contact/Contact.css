@@ -1,0 +1,38 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-tagline {
+  font-style: italic;
+  color: #555;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-map {
+  flex: 1;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 8px;
+}

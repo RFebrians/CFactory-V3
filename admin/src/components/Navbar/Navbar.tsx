@@ -23,7 +23,9 @@ const Navbar = () => {
   }
   return (
 <div className="navbar">
-  <img className="logo" src={assets.logo} alt="Logo" />
+    <h2 className="logo" onClick={() => navigate("/")}>
+    Control
+    </h2>
   
   {token && admin ? (
     <p className="admin-panel">Welcome, Admin!</p>

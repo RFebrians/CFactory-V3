@@ -6,6 +6,15 @@ Test Project interview CFactory yang dibuat dengan menggunakan mono repo via doc
 
 ---
 
+### Link
+- [Frontend](https://c-factory-frontend.vercel.app)
+- [Admin](https://c-factory-admin.vercel.app)
+- [Backend](https://briefoculus.radkai.tech/api)
+- [REST API Documentation](https://briefoculus.radkai.tech/api-docs)
+> silahkan lihat credentials pada sesi paling bawah
+
+---
+
 ### Task
 
 Demo Integration
